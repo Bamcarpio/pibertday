@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #2a003d;
+}
+
+body {
+  background: url(../you/galaxy.png);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: #0097e6;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.lovelove {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: url(../you/bg.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.lovelove .galaxy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+
+.lovelove .mountain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 5;
+}
+
+.lovelove .together {
+  position: absolute;
+  top: 21rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50vw;
+  z-index: 3;
+}
+
+.lovelove .galaxy-1 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 60vw;
+  z-index: 2;
+}
+
+.lovelove .galaxy-2 {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  width: 57vw;
+}
+
+.lovelove .adine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.lovelove .adine p {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.lovelove .adine h3 {
+  font-size: 10rem;
+  color: #fff;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.lovelove::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: linear-gradient(transparent, #000);
+  z-index: 12;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; 
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+
+.love {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.love .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.love .image img {
+  width: 100%;
+}
+
+.love .adine {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.love .adine span {
+  font-size: 2rem;
+  color: #0097e6;
+}
+
+.love .adine h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 1.5rem;
+}
+
+.love .adine p {
+  font-size: 1.6rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1.5rem 0;
+}
+
+
+.lyricss .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.lyricss .box-container .box {
+  text-align: center;
+  padding: 3rem;
+}
+
+.lyricss .box-container .box:nth-child(even) {
+  background: #0a0a0a;
+  border-radius: .5rem;
+}
+
+.lyricss .box-container .box:hover i {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.lyricss .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  background: #0097e6;
+  margin-bottom: 1.5rem;
+}
+
+.lyricss .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.lyricss .box-container .box p {
+  font-size: 1.6rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1.5rem 0;
+  padding-bottom: 0;
+}
+
+.bebe .box-container {
+  -webkit-columns: 25rem 3;
+          columns: 25rem 3;
+  gap: 1.5rem;
+}
+
+.bebe .box-container img {
+  width: 100%;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .lovelove .galaxy-1 {
+    top: 49%;
+  }
+  .lovelove .together {
+    width: 39rem;
+    z-index: 0;
+  }
+  .lovelove .adine p {
+    font-size: 2rem;
+  }
+  .lovelove .adine h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
