@@ -295,10 +295,14 @@ section {
     font-size: 55%;
   }
   .lovelove .galaxy-1 {
-    top: 49%;
+    top: 58%;
+  }
+  .lovelove .galaxy-2 {
+    top: 22%;
   }
   .lovelove .together {
-    width: 39rem;
+    width: 100rem;
+    top: 30%;
     z-index: 0;
   }
   .lovelove .adine p {
